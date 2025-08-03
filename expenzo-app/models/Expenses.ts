@@ -10,4 +10,4 @@ const ExpensesSchema = new Schema<IExpenses>({
   cost: { type: Number, required: true },
 });
 
-export default mongoose.models.User || mongoose.model<IExpenses>('Expenses', ExpensesSchema);
+export default mongoose.models.ExpensesSchema || mongoose.model<IExpenses>('Expenses', ExpensesSchema);
